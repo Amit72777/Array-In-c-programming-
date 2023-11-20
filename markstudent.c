@@ -6,7 +6,7 @@ int main()
     {
         printf(" Enter the  Roll number %d student mark =",i+1);
 
-        scanf("%d",&marks[i]);
+        scanf("%d",&marks[i]);   // Enter the Marks of student 
 
     }
 
@@ -14,7 +14,7 @@ int main()
     {
         if (marks[j]<35)
         {
-            printf(" \n %droll number of student mark is less than 35 ",j+1);
+            printf(" \n %droll number of student mark is less than 35 ",j+1);  // print the roll number of student who has less than 35 marks in class 
         }
     } 
 }
