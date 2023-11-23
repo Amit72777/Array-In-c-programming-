@@ -1,0 +1,52 @@
+/*write a programm to print the transpose of the matrix entered by the user and
+store it in a seperate matrix  */
+#include<stdio.h>
+int main()
+{
+    int row,column;
+
+    printf("Enter the column of the matrix ");
+    scanf("%d",&column);
+    printf("Enter the row of matrix : ");
+    scanf("%d",&row);
+    int a[row][column],b[column][row];
+
+    printf(" please input the matrix : ");
+    
+    for(int i=0;i<row;i++)
+    {
+        for(int j=0;j<column;j++)
+        {
+            scanf("%d",&a[i][j]);
+            b[j][i] = a[i][j];
+        }
+    }
+
+    printf("the matrix is : ");
+
+    for(int i=0;i<row;i++)
+    {
+        for(int j=0;j<column;j++)
+        {
+            printf("%d ",a[i][j]);
+            
+        }
+        printf("\n");
+    }
+
+    printf("\n the transpose of matrix is : \n");
+
+    for(int i=0;i<column;i++)
+    {
+        for(int j=0;j<row;j++)
+        {
+            printf("%d ",b[i][j]);
+            
+        }
+        printf("\n");
+    }
+
+
+    
+    return 0;
+}
