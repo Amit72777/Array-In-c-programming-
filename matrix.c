@@ -1,6 +1,6 @@
-// its is complert prpgramm its pending  // for perform operation using
-
+// its is complert prpgramm  pending  // for perform operation using
 // additional feature
+
 #include <stdio.h>
 
 int main()
@@ -40,7 +40,7 @@ int main()
     {
         printf(" Use only row operation\n");
 
-        printf(" if you interchange in row enter the  2 otherwise any number :");
+        printf(" \nif you interchange in row enter the  2 otherwise any number :");
         scanf("%d", &e);
 
         if (e == 2)
@@ -66,7 +66,7 @@ int main()
         }
         else
         {
-            printf(" for operation is  a[input row] = inputnum * a[ input row] + inputnum * a[intput row]\n");  // for print the operation 
+            printf(" \nfor operation is  a[input row] = inputnum * a[ input row] + inputnum * a[intput row]\n");  // for print the operation 
             scanf("%d%f%d%f%d", &c, &x, &f, &y, &z);
             printf("\n the operetiaon is  a[%d] =  %f * a[%d] +  %f  * a[%d]\n", c, x, f, y, z);
 
@@ -84,7 +84,7 @@ int main()
             }
         }
 
-        printf(" if you continue the operation intput 1 otherwise any other number :");  // for continue for operation 
+        printf(" \nif you continue the operation intput 1 otherwise any other number :");  // for continue for operation 
         scanf("%d", &m);
     }
 
@@ -100,14 +100,7 @@ int main()
         printf("\n");
     }
 
-    float x1, x2, x3, x4;
 
-
-            x3 = a[2][3] / a[2][2];
-            x2 = (a[1][3] - x3 * a[1][2]) / a[1][1];
-            x1 = (a[0][3] - x2 * a[0][1] - x3 * a[0][2]) / a[0][0];  // Solve back substituiton 
-
-    printf(" \n x= %f , \n y= %f,\n %f", x1, x2, x3);
 
     return 0;
 }
