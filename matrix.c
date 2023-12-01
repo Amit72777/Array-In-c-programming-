@@ -8,6 +8,7 @@ int main()
 
     int m = 1, c, d, e, f, g, n, z, row, column;
     float  x,y;
+    char u;
 
     printf("Enter the row of matrx :");
     scanf("%d", &row);
@@ -66,17 +67,21 @@ int main()
         }
         else
         {
-            printf(" \nfor operation is  a[input row] = inputnum * a[ input row] + inputnum * a[intput row]\n");  // for print the operation 
-            scanf("%d%f%d%f%d", &c, &x, &f, &y, &z);
-            printf("\n the operetiaon is  a[%d] =  %f * a[%d] +  %f  * a[%d]\n", c, x, f, y, z);
+            printf(" \nfor operation is  a[input row] = inputnum * a[ input row] inputsign(+or-) inputnum * a[intput row]\n");  // for print the operation 
+            scanf("%d%f%d %c %f%d", &c, &x, &f, &u, &y, &z);
+            printf("\n the operetiaon is  a[%d] =  %f * a[%d] %c  %f  * a[%d]\n", c, x, f,u, y, z);
 
             for (int i = 0; i < row; i++)
             {
                 for (int j = 0; j < column; j++)
                 {
-                    if ( i == c-1 )
+                    if (i == c - 1 && u == '+')
                     {
                         a[c - 1][j] = x * a[f - 1][j] + y * a[z - 1][j];
+                    }
+                    if (i == c - 1 && u == '-')
+                    {
+                        a[c - 1][j] = x * a[f - 1][j] - y * a[z - 1][j];
                     }
                     printf("%d \t", a[i][j]);
                 }
