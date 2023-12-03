@@ -7,7 +7,7 @@
 int main()
 {
 
-    int m = 1, c, d, e, f, g, n, x, y, z, row = 3, column = 4 ;
+    int m = 1, f, g, x, row = 3, column = 4 ;
 
     printf("\n This Code is valid for 3 Equation\n");
     printf("Enter the element 3*4 matrix  :\n ");
@@ -102,7 +102,7 @@ int main()
 
     printf(" \n");
 
-    float x1, x2, x3, x4;
+    float x1, x2, x3;
 
     x3 = a[2][3] / a[2][2];
     x2 = (a[1][3] - x3 * a[1][2]) / a[1][1];
